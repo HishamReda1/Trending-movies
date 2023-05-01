@@ -1,6 +1,6 @@
 import './App.css';
 import toast, { Toaster } from 'react-hot-toast';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import Movies from './Components/Movies/Movies';
