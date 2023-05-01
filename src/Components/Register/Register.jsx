@@ -81,7 +81,7 @@ const Register = () => {
                 <title>Register</title>
                
             </Helmet>
-            <div className="container w-75 mx-auto">
+            <div className="container w-75 mx-auto pt-5">
               <form   action="" onSubmit={formik.handleSubmit}>
                 <h3>Registeration form</h3>
                 <div style={{display:'none',alignItems:'center'}} className="errMsg alert alert-danger text-center">Email already in use.</div>

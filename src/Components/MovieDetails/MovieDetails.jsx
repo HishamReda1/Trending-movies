@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import { Helmet } from 'react-helmet';
 
 export default function MovieDetails() {
   let { id, media_type } = useParams()
@@ -25,6 +26,7 @@ export default function MovieDetails() {
   }, []);
   return (
     <>
+    <Helmet> Details</Helmet>
       <div className="container pt-5 "><h3 className='py-5 mt-5 animate__animated animate__fadeInDown '>Details</h3>
         {Details ? <>   <div className="row">
           <div className="col-md-3">

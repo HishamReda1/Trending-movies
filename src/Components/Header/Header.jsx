@@ -2,9 +2,9 @@ import React from 'react';
 import './header.css'
 const Header = () => {
     return (
-        <div>
-             <div >
-  <div className="header">
+        <div className='vh-100'>
+             
+  <div className="header vh-100">
     <div className="sides">
     
     </div>
@@ -17,7 +17,7 @@ const Header = () => {
     </div>
   </div>
 
-</div>
+
         </div>
     );
 }

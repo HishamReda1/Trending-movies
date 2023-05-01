@@ -120,7 +120,7 @@ const Login = ({saveUser, userdata}) => {
               <button className='btn btn-outline-primary mt-4 mx-3' type='submit ' onClick={()=>{navigate('/Register')}}>Register</button>
             <div className="mt-3">
                  <Link className='text-center ' onClick={()=>{forgetPassword()} }>
-                 Do you forget your password?
+                 Did you forget your password?
                 </Link>
             </div>
               </form>

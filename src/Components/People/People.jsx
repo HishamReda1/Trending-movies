@@ -4,6 +4,7 @@ import MediaItem from '../MediaItem/MediaItem';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import  { useState } from 'react'
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 export default function People() {
 
   const [People, setPeople] = useState(null);
@@ -22,7 +23,9 @@ export default function People() {
       
     };
   }, []);
-  return <> <div className="container pt-5">
+  return <>
+  <Helmet> People</Helmet>
+   <div className="container pt-5">
      <div className="row py-3 ">
       <div className="col-md-4 align-items-center ">
         <div className="brdr w-25 mb-3 "></div>

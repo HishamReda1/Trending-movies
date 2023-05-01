@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import MediaItem from '../MediaItem/MediaItem';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import { Helmet } from 'react-helmet';
 
 export default function Movies() {
   const [movies, setmovies] = useState(null);
@@ -24,7 +25,7 @@ async function getTrending(page) {
     };
   }, []);
   return <>
-  
+  <Helmet> Movies</Helmet>
   <div className="container pt-5">
     <div className="row py-3 ">
       <div className="col-md-4 align-items-center ">

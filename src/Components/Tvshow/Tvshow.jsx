@@ -3,6 +3,7 @@ import MediaItem from '../MediaItem/MediaItem';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import  { useState } from 'react'
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 export default function Tvshow() {
     const [tv, settv] = useState(null);
     async function getTrending(mediaType,callback) {
@@ -22,6 +23,7 @@ export default function Tvshow() {
   }, []);
     return (
         <>
+        <Helmet> Tvshows</Helmet>
         <div className="container pt-5">
          <div className="row py-3 ">
             <div className="col-md-4 align-items-center ">

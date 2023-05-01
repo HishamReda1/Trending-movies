@@ -4,6 +4,7 @@ import 'animate.css';
 import MediaItem from '../MediaItem/MediaItem';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import Header from '../Header/Header';
+import { Helmet } from 'react-helmet';
 
 export default function Home() {
 const [movies, setmovies] = useState(null);
@@ -29,6 +30,7 @@ async function getTrending(mediaType,callback) {
   }, []);
   return (
     <>
+    <Helmet> Home</Helmet>
 <Header/>
 
     <div className="container">
