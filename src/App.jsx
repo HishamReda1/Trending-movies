@@ -47,7 +47,7 @@ if (confirm) {
   }, []);
 
   
-  let routers = createBrowserRouter([
+  let routers = createHashRouter([
     { path: "", element: <Layout userdata={userdata} removeUser={removeUser}/>, children: [
       {index:true , element: <Home/>},
       {path:"Home" , element: <Home/>},
